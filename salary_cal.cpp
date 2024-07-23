@@ -111,5 +111,33 @@ int main()
         cout << "Total Deduction: " << totalDeduction << "\n";
         break;
     }
-   }
+    case 4:
+    {
+        double gross_pay = Gross_Pay();
+        double totalDeduction = Total_Deduction();
+        double netPay = Net_Pay();
+        cout << "Net Pay: " << netPay << "\n";
+        break;
+    }
+    case 5:
+    {
+        double total_allowance = Total_Allowance();
+        double gross_Pay = Gross_Pay();
+        double totalDeduction = Total_Deduction();
+        double netPay = Net_Pay();
+        Salary_Sheet();
+        break;
+    }
+    case 6:
+    {
+        cout<<"Exiting the system. Goodbye!"<<endl;
+        break;
+    }
+    default:
+                cout << "Invalid choice. Please enter a valid option.\n";
+    } while (choice != 6);
+
+    return 0;
+
+  
 }
