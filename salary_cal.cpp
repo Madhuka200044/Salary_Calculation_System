@@ -77,12 +77,26 @@ void Salary_Sheet()
     cout<<"Basic Salary : "<<B_salary<<endl;
     cout<<"Total Allowance : "<<Total_Allowance()<<endl;
     cout<<"Gross pay : "<<Gross_Pay()<<endl;
-    cout<<"De"
-
-
+    cout<<"Deducation : "<<Total_Deduction()<<endl;
+    cout<<"Net Pay : "<<Net_Pay()<<endl;
 }
 
 int main()
 {
    Employee_Details();
+
+   int choice;
+   cout<<"Enter Your Choice "<<endl;
+   cin>>choice;
+   switch(choice)
+   {
+    case 1:
+    {
+        Total_Allowance();
+    }
+    case 2:
+    {
+        Gross_Pay()
+    }
+   }
 }
