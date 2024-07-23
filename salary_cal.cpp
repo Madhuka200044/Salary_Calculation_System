@@ -64,7 +64,7 @@ double Total_Deduction()
 
 double Net_Pay()
 {
-    return Gross_Pay()+Total_Deduction();
+    return Gross_Pay()-Total_Deduction();
 }
 
 void Salary_Sheet()
