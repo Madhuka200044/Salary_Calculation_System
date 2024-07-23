@@ -85,6 +85,8 @@ int main()
 {
    Employee_Details();
 
+   Display_Menu();
+
    int choice;
    cout<<"Enter Your Choice "<<endl;
    cin>>choice;
@@ -92,11 +94,22 @@ int main()
    {
     case 1:
     {
-        Total_Allowance();
+        double total_allowace = Total_Allowance();
+        cout << "Total Allowance: " << total_allowace << "\n";
+        break;
+
     }
     case 2:
     {
-        Gross_Pay()
+        double gross_pay = Gross_Pay();
+        cout <<"Gross Pay :"<<gross_pay<<"\n";
+        break;
+    }
+    case 3:
+    {
+        double totalDeduction = Total_Deduction();
+        cout << "Total Deduction: " << totalDeduction << "\n";
+        break;
     }
    }
 }
